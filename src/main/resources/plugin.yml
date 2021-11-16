@@ -1,0 +1,7 @@
+name: MasterSlaveMaru
+version: '${project.version}'
+main: net.teamuni.masterslavemaru.masterslavemaru.MasterSlaveMaru
+api-version: 1.17
+authors: [ AbelBeak ]
+description: MasterSlave Plugin for DanMaru
+website: https://www.abelbeak.com
