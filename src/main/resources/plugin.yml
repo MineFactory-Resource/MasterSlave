@@ -5,3 +5,7 @@ api-version: 1.17
 authors: [ AbelBeak ]
 description: MasterSlave Plugin for DanMaru
 website: https://www.abelbeak.com
+commands:
+  masterslave:
+    aliases:
+      - ms
