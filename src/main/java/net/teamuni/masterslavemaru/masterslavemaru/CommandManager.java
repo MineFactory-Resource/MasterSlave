@@ -19,7 +19,7 @@ public class CommandManager implements CommandExecutor {
             if (GameManager.isGameRunning()) {
                 sender.sendMessage("게임이 이미 진행중이라 사용할 수 없습니다.");
             }
-            GameManager task = new GameManager(5, 5, ImmutableList.copyOf(Bukkit.getOnlinePlayers());
+            GameManager task = new GameManager(5, 5, ImmutableList.copyOf(Bukkit.getOnlinePlayers()));
             task.runTask(MasterSlaveMaru.getInstance());
         }
 
