@@ -1,6 +1,5 @@
 package net.teamuni.masterslavemaru.masterslavemaru;
 
-import com.google.common.collect.ImmutableList;
 import org.bukkit.Bukkit;
 import org.bukkit.entity.Player;
 import org.bukkit.scheduler.BukkitRunnable;
@@ -49,14 +48,10 @@ public class GameManager extends BukkitRunnable{
                 p.setNoDamageTicks(30 * 20);
             }
         }, 5 * 20);
-
     }
 
     public static void stopGame() {
         GAME_TASK.cancel();
         GAME_STATUS = false;
     }
-
 }
-
-

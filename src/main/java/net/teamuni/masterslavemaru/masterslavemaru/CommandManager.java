@@ -11,7 +11,6 @@ import org.bukkit.entity.Player;
 public class CommandManager implements CommandExecutor {
     @Override
     public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
-
         if(args[0].equals("start")) {
             if (GameManager.isSetting()) {
                 sender.sendMessage("스폰장소와 로비장소를 먼저 설정해주세요.");
@@ -43,9 +42,6 @@ public class CommandManager implements CommandExecutor {
                 MasterSlaveMaru.config.set("lobby", loc);
             }
         }
-
         return false;
-
-
     }
 }
