@@ -14,7 +14,6 @@ public final class MasterSlaveMaru extends JavaPlugin {
 
     @Override
     public void onEnable() {
-        // Plugin startup logic
         instance = this;
         config = this.getConfig();
         getCommand("masterslave").setExecutor(new CommandManager());
@@ -23,6 +22,5 @@ public final class MasterSlaveMaru extends JavaPlugin {
 
     @Override
     public void onDisable() {
-        // Plugin shutdown logic
     }
 }
