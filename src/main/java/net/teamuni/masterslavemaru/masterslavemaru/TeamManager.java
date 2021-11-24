@@ -6,11 +6,12 @@ import org.bukkit.event.Listener;
 import org.bukkit.event.entity.PlayerDeathEvent;
 import org.bukkit.scoreboard.Team;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class TeamManager implements Listener {
 
-    public static List<Team> teams;
+    public static List<Team> teams = new ArrayList<>();
 
     public static void createTeam(List<Player> players) {
         for (Player player : players) {

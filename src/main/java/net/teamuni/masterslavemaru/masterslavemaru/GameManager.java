@@ -7,7 +7,7 @@ import org.bukkit.scoreboard.Scoreboard;
 
 import java.util.List;
 
-public class GameManager extends BukkitRunnable{
+public class GameManager extends BukkitRunnable {
 
     public static boolean GAME_STATUS;
     public static BukkitRunnable GAME_TASK;
@@ -28,11 +28,12 @@ public class GameManager extends BukkitRunnable{
     }
 
     public static boolean isSetting() {
-        return MasterSlaveMaru.config.isSet("spawn") && MasterSlaveMaru.config.isSet("setspawn");
+        return MasterSlaveMaru.config.isSet("spawn") && MasterSlaveMaru.config.isSet("lobby");
     }
 
     @Override
     public void run() {
+        GAME_STATUS = true;
         Bukkit.broadcastMessage(String.format("총 참여자 %d명", this.players.size()));
         Bukkit.broadcastMessage("5초 뒤, 게임 월드로 이동됩니다.");
 

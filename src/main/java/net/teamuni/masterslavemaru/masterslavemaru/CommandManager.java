@@ -15,9 +15,11 @@ public class CommandManager implements CommandExecutor {
         if(args[0].equals("start")) {
             if (GameManager.isSetting()) {
                 sender.sendMessage("스폰장소와 로비장소를 먼저 설정해주세요.");
+                return false;
             }
             if (GameManager.isGameRunning()) {
                 sender.sendMessage("게임이 이미 진행중이라 사용할 수 없습니다.");
+                return false;
             }
             GameManager task = new GameManager(5, 5, Lists.newArrayList(Bukkit.getOnlinePlayers()));
             task.runTask(MasterSlaveMaru.getInstance());
