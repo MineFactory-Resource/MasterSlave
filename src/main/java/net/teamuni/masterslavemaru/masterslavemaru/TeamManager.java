@@ -7,32 +7,32 @@ import org.bukkit.event.entity.PlayerDeathEvent;
 import org.bukkit.scoreboard.Team;
 
 import java.util.List;
+
 public class TeamManager implements Listener {
 
     public static List<Team> teams;
-    public static void createTeam(List<Player> players){
-        for(Player player: players)
-        {
+
+    public static void createTeam(List<Player> players) {
+        for (Player player : players) {
             Team team = GameManager.board.registerNewTeam(player.getDisplayName());
             team.setAllowFriendlyFire(false);
             team.addPlayer(player);
             teams.add(team);
-
         }
     }
 
     public static Team hasTeam(Player player) {
         for (Team team : teams) {
-            if (team.getEntries().contains(player)) {
+            if (team.getPlayers().contains(player)) {
                 return team;
             }
         }
         return null;
     }
 
-    public static void setTeam(Team targetTeam, Player player){
+    public static void setTeam(Team targetTeam, Player player) {
         Team team = TeamManager.hasTeam(player);
-        if(!(team ==null)){
+        if (!(team == null)) {
             team.removePlayer(player);
             targetTeam.addPlayer(player);
             return;

@@ -15,7 +15,8 @@ public final class MasterSlaveMaru extends JavaPlugin {
     @Override
     public void onEnable() {
         // Plugin startup logic
-        this.config = this.getConfig();
+        instance = this;
+        config = this.getConfig();
         getCommand("masterslave").setExecutor(new CommandManager());
         this.saveDefaultConfig();
     }
