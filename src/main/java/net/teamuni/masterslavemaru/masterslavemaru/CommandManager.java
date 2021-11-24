@@ -1,6 +1,7 @@
 package net.teamuni.masterslavemaru.masterslavemaru;
 
 import com.google.common.collect.ImmutableList;
+import com.google.common.collect.Lists;
 import org.bukkit.Bukkit;
 import org.bukkit.Location;
 import org.bukkit.command.Command;
@@ -18,7 +19,7 @@ public class CommandManager implements CommandExecutor {
             if (GameManager.isGameRunning()) {
                 sender.sendMessage("게임이 이미 진행중이라 사용할 수 없습니다.");
             }
-            GameManager task = new GameManager(5, 5, ImmutableList.copyOf(Bukkit.getOnlinePlayers()));
+            GameManager task = new GameManager(5, 5, Lists.newArrayList(Bukkit.getOnlinePlayers()));
             task.runTask(MasterSlaveMaru.getInstance());
         }
 
