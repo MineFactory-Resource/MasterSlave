@@ -31,7 +31,7 @@ public final class MasterSlaveMaru extends JavaPlugin {
 
     @Override
     public void onDisable() {
-        for (Iterator<KeyedBossBar> it = getServer().getBossBars(); it.hasNext(); ) {
+        for (Iterator<KeyedBossBar> it = getServer().getBossBars(); it.hasNext();) {
             BossBar bossBar = it.next();
             bossBar.removeAll();
         }
