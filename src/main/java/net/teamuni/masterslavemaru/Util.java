@@ -17,7 +17,6 @@ public class Util {
     }
 
     public static BukkitTask runTaskLater(Runnable runnable, long delay) {
-        delay = 0;
         return Bukkit.getScheduler().runTaskLater(MasterSlaveMaru.getInstance(), runnable, delay);
     }
 
