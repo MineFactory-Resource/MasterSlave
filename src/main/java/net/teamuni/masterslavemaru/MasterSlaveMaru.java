@@ -1,7 +1,7 @@
-package net.teamuni.masterslavemaru.masterslavemaru;
+package net.teamuni.masterslavemaru;
 
-import net.teamuni.masterslavemaru.masterslavemaru.managers.CommandManager;
-import net.teamuni.masterslavemaru.masterslavemaru.managers.ListenerManager;
+import net.teamuni.masterslavemaru.managers.CommandManager;
+import net.teamuni.masterslavemaru.managers.ListenerManager;
 import org.bukkit.boss.BossBar;
 import org.bukkit.boss.KeyedBossBar;
 import org.bukkit.configuration.file.FileConfiguration;

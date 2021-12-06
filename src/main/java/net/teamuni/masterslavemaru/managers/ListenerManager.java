@@ -1,6 +1,6 @@
-package net.teamuni.masterslavemaru.masterslavemaru.managers;
+package net.teamuni.masterslavemaru.managers;
 
-import net.teamuni.masterslavemaru.masterslavemaru.Util;
+import net.teamuni.masterslavemaru.Util;
 import org.bukkit.Location;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;

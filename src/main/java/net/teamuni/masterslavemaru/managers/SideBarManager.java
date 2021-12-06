@@ -1,4 +1,4 @@
-package net.teamuni.masterslavemaru.masterslavemaru.managers;
+package net.teamuni.masterslavemaru.managers;
 
 import org.bukkit.Bukkit;
 import org.bukkit.OfflinePlayer;

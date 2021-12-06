@@ -1,7 +1,7 @@
-package net.teamuni.masterslavemaru.masterslavemaru;
+package net.teamuni.masterslavemaru;
 
 import com.google.common.collect.Lists;
-import net.teamuni.masterslavemaru.masterslavemaru.managers.GameManager;
+import net.teamuni.masterslavemaru.managers.GameManager;
 import org.bukkit.Bukkit;
 import org.bukkit.entity.HumanEntity;
 import org.bukkit.entity.Player;

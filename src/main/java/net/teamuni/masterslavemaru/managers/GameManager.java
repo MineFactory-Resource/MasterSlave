@@ -1,8 +1,8 @@
-package net.teamuni.masterslavemaru.masterslavemaru.managers;
+package net.teamuni.masterslavemaru.managers;
 
 import com.google.common.collect.Lists;
-import net.teamuni.masterslavemaru.masterslavemaru.MasterSlaveMaru;
-import net.teamuni.masterslavemaru.masterslavemaru.Util;
+import net.teamuni.masterslavemaru.MasterSlaveMaru;
+import net.teamuni.masterslavemaru.Util;
 import org.bukkit.Bukkit;
 import org.bukkit.Location;
 import org.bukkit.boss.BarColor;
